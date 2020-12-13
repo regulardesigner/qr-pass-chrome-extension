@@ -1,9 +1,19 @@
 {
   "manifest_version": 2,
   "name": "QR PASS",
-  "version": "1.0.2",
+  "version": "1.1.2",
   "permissions": ["tabs"],
   "browser_action": {
     "default_popup": "app.html"
+  },
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "windows": "Ctrl+Shift+O",
+        "mac": "Command+Shift+O",
+        "chromeos": "Ctrl+Shift+O",
+        "linux": "Ctrl+Shift+O"
+      }
+    }
   }
 }
