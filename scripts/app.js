@@ -7,14 +7,14 @@ function getCurrentTabUrl() {
     // generate option
     const options = {
       text: tab.url,
-      title: tab.title.slice(0,30),
-      titleFont: "bold 14px Arial",
-      titleHeight: 30, // height, including subTitle. default is 0
-      titleTop: 20, // draws y coordinates. default is 30
-      titleBackgroundColor: "#d5dce9",
-      colorDark : "#000000",
-      colorLight : "#d5dce9",
+      colorDark : "#1b202b",
+      colorLight : "#ffffff",
       correctLevel : QRCode.CorrectLevel.L,
+      logo: `${tab.favIconUrl}`,
+      logoBackgroundColor: "#1b202b",
+      logoWidth:32,
+      logoHeight:32,
+      quietZone: 14
     }
     const qrcode =  document.querySelector('.qrcode')
     // generate qr

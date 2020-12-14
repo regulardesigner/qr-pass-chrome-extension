@@ -3,8 +3,15 @@
   padding: 0;
 }
 
-.title {
+.title,
+.info {
   margin: 0 0 0.5rem 0;
+  color: rgb(27, 32, 43);
+}
+
+.info {
+  font-size: 12px;
+  color: rgba(27, 32, 43, 0.6);
 }
 
 .app {
@@ -19,6 +26,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0 4px rgba(0,0,0,0.2);
 }
 
 .error {
